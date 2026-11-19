@@ -43,8 +43,6 @@ def _is_tagalog(word: str) -> bool:
 def keep(word: str) -> bool:
     if len(word) < config.MIN_TOKEN_LEN:
         return False
-    if word in config.WHITELIST:
-        return True
     if not VALID_WORD_RE.fullmatch(word):
         return False
     if not (VOWELS & set(word)):
