@@ -13,6 +13,8 @@ ERRORS = "ignore"
 # Thresholds
 MIN_TOKEN_LEN = 5
 MIN_FREQ = 10
+ZIPF_MIN = 2.0
+MAX_CONSONANT_RUN = 3
 
 # Constants
 

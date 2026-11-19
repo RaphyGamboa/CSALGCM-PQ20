@@ -33,10 +33,10 @@ def iter_tokens(line: str) -> Iterator[str]:
 
 # Filtering
 def _is_tagalog(word: str) -> bool:
-    if zipf_frequency(word, "tl") >= config.ZIPF_MIN:
+    if zipf_frequency(word, "fil") >= config.ZIPF_MIN:
         return True
     if "-" in word:
-        return zipf_frequency(word.replace("-", ""), "tl") >= config.ZIPF_MIN
+        return zipf_frequency(word.replace("-", ""), "fil") >= config.ZIPF_MIN
     return False
 
 
